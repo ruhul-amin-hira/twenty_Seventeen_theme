@@ -1,0 +1,21 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/style.css -w",
+    "compile:sass": "node-sass scss/main.scss css/style.com.css",
+    "prefix:css": "npx postcss css/style.css --use autoprefixer -d build/"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "concat": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "node-sass": "^4.8.3",
+    "postcss-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "postcss": "^6.0.22"
+  }
+}
